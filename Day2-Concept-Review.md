@@ -1,0 +1,13 @@
+# Day 2 Concept Review
+- **What is the difference between a compute board vs flight controller?**
+  - The compute board handes the calculations and much of the code, while the flight controller takes care of the lower-level operations.
+- **What os, software, firmware, and middleware do each run?**
+  - Compute board (Linux), Pixhawk (NuttX, PX4, uORB)
+- **How do the two comunicate with each other?**
+  - MavLink
+- **Which sensors are procesed by which processor?**
+  - Low-Level controllers/sensors (Compute board), higher-level sensors (flight controller), RC reciever (flight controller)
+- **What are NuttX, uORB, and Mavlink?**
+  - NuttX is an operating system that is used in microcontroller enviorments
+  - uORB, it is a messaging system used in the PX4 autopilot software
+  - Mavlink is a communication protocol used to communicate between the components of the drone
