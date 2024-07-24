@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+        'arm_disarm = recon_2.arm_disarm:main'
         ],
     },
 )

@@ -11,7 +11,7 @@ class Arming_node(Node):
     def __init__(self):
         super().__init__("arm_node")
         self.create_timer(0.1, self.Armed_callback)
-        self.pose_subscriber = self.create_publisher(ActuatorArmed, "uORB/topics/safety.h", 10)
+        self.pose_subscriber = self.create_publisher(ActuatorArmed, "uORB/topics/safety", 10)
         self.cmd_arm_publisher_ = self.create_publisher(
             bool, "/arm_node/pose", 10
         )
